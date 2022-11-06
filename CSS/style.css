@@ -25,7 +25,6 @@ body {
 /*Painel Central*/
 .pain_superior_background {
   background-color: #00c5d0;
-  padding: 30px;
   margin-top: 0;
   top: 0;
 }
@@ -41,55 +40,12 @@ body {
   text-align: center;
 }
 
-#opc1 {
-  padding-left: 5px;
-  padding-right: 15px;
-  padding-bottom: 0;
-  border-bottom: 1px solid white;
-  text-align: center;
-  padding-top: 1px;
-}
-
-#opc1:hover {
-  border-bottom: 2px solid black;
-}
-
-#opc2 {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 0;
-  padding-top: 1px;
-}
-
-#opc2:hover {
-  border-bottom: 2px solid black;
-}
-
-#opc3 {
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-bottom: 0;
-  padding-top: 1px;
-}
-
-#opc3:hover {
-  border-bottom: 2px solid black;
-}
-
 /*Painel de conta e configuraçâo*/
 .opc_config {
-  position: absolute;
+  position: relative;
   right: 40px;
-  top: 15px;
+  left: 1270px;
   color: black;
-}
-
-#opc_config_img1 {
-  padding-right: 20px;
-}
-
-#opc_config_img2 {
-  padding-right: 20px;
 }
 
 #opc_config_img3 {
@@ -107,7 +63,7 @@ body {
 
 #pain_banco {
   position: relative;
-  left: 500px;
+  left: 440px;
   top: 10px;
   background-color: azure;
   border: 3px solid #00c5d0;
