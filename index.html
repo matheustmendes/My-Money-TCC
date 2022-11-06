@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>My Money</title>
+  </head>
+
+  <body>
+    <!--Cabeça-->
+
+    <!--Logo-->
+    <div class="logo">
+      <img src="Img/logo.jpg" width="124px" />
+    </div>
+
+    <!--Painel central-->
+    <div class="pain_superior_background">
+      <div class="pain_superior">
+        <table>
+          <tr>
+            <td id="opc1">Visão geral</td>
+            <td id="opc2">Relatórios</td>
+            <td id="opc3">Limite de gastos</td>
+          </tr>
+        </table>
+      </div>
+
+      <!--Painel de conta e configuração-->
+      <div class="opc_config">
+        <div>
+          <table>
+            <tr>
+              <td id="opc_config_img1">
+                <img src="./Img/sino.png" width="25px" />
+              </td>
+              <td id="opc_config_img2">
+                <img src="./Img/engrenagem.png" width="27px" />
+              </td>
+              <td id="opc_config_img3">
+                <img src="./Img/conta.png" width="40px" />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Corpo-->
+
+    <!--Painel abaixo  da home-->
+    <div class="pain_background">
+      <table>
+        <div>
+          <tr id="pain_banco">
+            <td><img src="./Img/banco.png" width="40px" /></td>
+            <td>
+              <h3><button class="botao">Conta Bancária</button></h3>
+            </td>
+          </tr>
+        </div>
+
+        <div>
+          <tr id="pain_banco_trans">
+            <td><img src="./Img/transferencia.png" width="40px" /></td>
+            <td>
+              <h3><button class="botao">Transferência</button></h3>
+            </td>
+          </tr>
+        </div>
+      </table>
+    </div>
+
+    <!--Extrato-->
+    <div class="pain_princip">
+      <div id="pain_princip_saldo">
+        <p>Saldo total</p>
+        <h3 id="totalDisplay">R$ 400,00</h3>
+      </div>
+
+      <div id="princip_ganho_img">
+        <img src="./Img/green.png" width="150px" />
+      </div>
+
+      <div id="pain_princip_ganho">
+        <p>Receita mensal</p>
+        <h2 style="color: green" id="incomeDisplay">R$ 400,00</h2>
+      </div>
+
+      <div id="princip_gasto_img">
+        <img src="./Img/red.png" width="150px" />
+      </div>
+
+      <div id="pain_princip_gasto">
+        <p>Gasto mensal</p>
+        <h2 style="color: red" id="expenseDisplay">R$ 400,00</h2>
+      </div>
+    </div>
+
+    <section id="transactions">
+      <button class="dialog-open">+ Nova transação</button>
+      <table id="table-data">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <dialog id="dialog">
+      <div class="modal-overlay">
+        <div class="modal">
+          <div id="form">
+            <h2>Nova Transação</h2>
+            <form action="" onsubmit="Form.submit(event)">
+              <div class="input-group">
+                <label class="sr-only" for="description">Descrição</label>
+                <input
+                  type="text"
+                  id="description"
+                  name="description"
+                  placeholder="Descrição"
+                />
+              </div>
+
+              <div class="input-group">
+                <label class="sr-only" for="categories">
+                  <select name="categories" id="categories">
+                    <option value="Salário">Salário</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Contas">Contas</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Saúde">Saúde</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="input-group">
+                <label class="sr-only" for="amount">Valor</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="amount"
+                  name="amount"
+                  placeholder="0,00"
+                />
+                <small class="help"
+                  >Use o sinal - (negativo) para despesas e , (vírgula) para
+                  casas decimais.</small
+                >
+              </div>
+
+              <div class="input-group">
+                <label class="sr-only" for="date">Data</label>
+                <input type="date" id="date" name="date" />
+              </div>
+
+              <div class="input-group actions">
+                <a href="#" class="button cancel">Cancelar</a>
+                <button>Salvar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <!--Calculadora-->
+    <div class="calculadora">
+      <a href="./calculadora/index.html" target="_blank"
+        ><img src="./Img/calculadora.png" width="80px"
+      /></a>
+    </div>
+
+    <div class="rodape">
+      <h2><img src="./Img/logo.jpg" width="120px" /></h2>
+
+      <div class="contato">
+        <h1>Contato</h1>
+        <p class="contato">
+          Rua Coronel Pacheco, 10 - Pituba - Salvador - Bahia
+        </p>
+        <p class="contato">Telefone: (71)99999-8888/98787-9898</p>
+        <p class="contato">Email: atendimento@mymoney.com.br</p>
+      </div>
+    </div>
+    <script src="/JS/index.js"></script>
+  </body>
+</html>

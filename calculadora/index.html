@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="fundo">
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td><button id="limparCalculo" class="botao">C</button></td>
+            <td><button id="limparDisplay" class="botao">CE</button></td>
+            <td><button id="none" class="botao"><</button></td>
+            <td><button id="operadorDividir" class="botao">/</button></td>
+            <td><button id="operadorMultiplicar" class="botao">*</button></td>
+          </tr>
+          <tr>
+            <td><button id="tecla7" class="botao">7</button></td>
+            <td><button id="tecla8" class="botao">8</button></td>
+            <td><button id="tecla9" class="botao">9</button></td>
+            <td><button id="operadorSubtrair" class="botao">-</button></td>
+            <td><button id="inverter" class="botao">±</button></td>
+          </tr>
+          <tr>
+            <td><button id="tecla4" class="botao">4</button></td>
+            <td><button id="tecla5" class="botao">5</button></td>
+            <td><button id="tecla6" class="botao">6</button></td>
+            <td><button id="operadorSoma" class="botao">+</button></td>
+            <td><button id="backspace" class="botao">«</button></td>
+          </tr>
+          <tr>
+            <td><button id="tecla1" class="botao">1</button></td>
+            <td><button id="tecla2" class="botao">2</button></td>
+            <td><button id="tecla3" class="botao">3</button></td>
+            <td rowspan="2">
+              <button class="botao" style="height: 106px" id="igual">=</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button class="botao" style="width: 106px" id="tecla0">0</button>
+            </td>
+            <td><button id="decimal" class="botao">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
