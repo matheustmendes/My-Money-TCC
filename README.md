@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O My Money foi desenvolvido na intenção de ajudar as pessoas na sua educação financeira, mostrando onde cada gasto foi feito e que dia foi feito, disponibilizando um controle maior das finanças.
 
 > [🔗 Clique aqui para acessar o projeto]
-()
+(https://mymoneysenai.vercel.app/)
 
 ## Licença
 
